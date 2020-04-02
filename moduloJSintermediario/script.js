@@ -31,3 +31,16 @@ function botaoDireito() {
 function clickDuplo() {
     console.log("Clicou duas vezes!!!");
 }
+
+function apertouTecla(event) {
+    console.log("Apertou alguma tecla: " + event.keyCode);
+
+}
+
+function soltouTecla(event) {
+    console.log("Soltou a tecla: " + event.keyCode);
+
+    if (event.shiftKey && event.keyCode == 69) {
+        console.log("Apertou com o shift!!! + e");
+    }
+}
