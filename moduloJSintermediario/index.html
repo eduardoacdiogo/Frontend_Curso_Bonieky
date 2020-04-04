@@ -5,14 +5,16 @@
     <script type="text/javascript" src="script.js"></script>
 </head>
 
-<body>
+<body onload="carregou()">
 
     <button onmousedown="apertouMouse()" onmouseup="soltouMouse()" onmouseover="mousePassouCima()" onmouseout="mouseSaiuDeCima()" onmousemove="moveuMouse()">Eu sou um botao</button>
     <br/><br/>
     <button onclick="clicou()" oncontextmenu="return botaoDireito()" ondblclick="clickDuplo()">Clicou!!!</button>
     <br/><br/>
     <input type="text" onkeyup="apertouTecla(event)" />
+    <br/><br/>
     <input type="text" onkeyup="soltouTecla(event)" />
+    <br/><br/>
     <input type="text" onkeypress="precionouTecla(event)" />
 </body>
 

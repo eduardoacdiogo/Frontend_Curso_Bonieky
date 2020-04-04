@@ -44,3 +44,7 @@ function soltouTecla(event) {
         console.log("Apertou com o shift!!! + e");
     }
 }
+
+function carregou() {
+    alert("Pagina carregada!!!");
+}
