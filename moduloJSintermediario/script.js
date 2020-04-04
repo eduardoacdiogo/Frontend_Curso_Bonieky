@@ -1,3 +1,4 @@
+// Eventos de Mouse
 function apertouMouse() {
     console.log("Apertou o mouse!!!");
 }
@@ -31,7 +32,7 @@ function botaoDireito() {
 function clickDuplo() {
     console.log("Clicou duas vezes!!!");
 }
-
+// Eventos de Teclado
 function apertouTecla(event) {
     console.log("Apertou alguma tecla: " + event.keyCode);
 
@@ -44,7 +45,7 @@ function soltouTecla(event) {
         console.log("Apertou com o shift!!! + e");
     }
 }
-
+// Eventos de Página
 function carregou() {
     alert("Pagina carregada!!!");
 }
@@ -60,3 +61,15 @@ function focou() {
 function saiuDoCampo() {
     console.log("Saiu do campo!!!");
 }
+
+// Manipulando Datas
+
+var dt = new Date();
+var hr = dt.getHours();
+var min = dt.getMinutes();
+var data = new Date(Date.parse("March 10, 2012"));
+
+var dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+dias[dt.getDay];
+
+dt.setDate(dt.getDay() + 60);
