@@ -48,3 +48,15 @@ function soltouTecla(event) {
 function carregou() {
     alert("Pagina carregada!!!");
 }
+
+function mudouOpcao(objeto) {
+    console.log("Selecionou: " + objeto.value);
+}
+
+function focou() {
+    console.log("Focou no campo!!!");
+}
+
+function saiuDoCampo() {
+    console.log("Saiu do campo!!!");
+}
