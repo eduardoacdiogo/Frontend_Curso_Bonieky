@@ -53,3 +53,23 @@ var mel = new Animal();
 mel.raca = "Gato";
 var lulu = new Animal();
 lulu.nome = "Lulu";
+
+// Web storage
+/* para guardar um item
+localStorage.setItem("nome", "Eduardo");
+localStorage.nome = "Bonieky";
+// para pegar um item
+localStorage.getItem("nome");
+localStorage.nome;
+// remover um item
+localStorage.removeItem("nome");
+*/
+if (typeof localStorage.nome == "undefined") {
+    localStorage.nome = prompt("Qual o seu nome?");
+}
+
+document.getElementById("info").innerHTML = localStorage.nome;
+
+//sessionStorage.getItem();
+//sessionStorage.setItem();
+//sessionStorage.removeItem();
