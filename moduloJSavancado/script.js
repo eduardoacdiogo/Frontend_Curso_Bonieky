@@ -37,8 +37,14 @@ function Animal() {
         console.log("Xiiiiiiii");
     }
     this.comer = function(kg) {
+        for (var i = 0; i < kg; i++) {
+            this.mastigar();
+        }
         console.log("hummm");
         this.peso = this.peso + (kg / 2);
+    }
+    this.mastigar = function() {
+        console.log("Nhoc...");
     }
 }
 
