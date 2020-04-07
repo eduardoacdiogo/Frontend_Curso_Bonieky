@@ -23,3 +23,27 @@ setTimeout(acao2, 5000);
 //var timer = setInterval(acao, 1000);
 //clearInterval(timer);
 //clearTimeout(timer);
+
+//Criando um objeto
+function Animal() {
+    // Propriedades
+    this.raca = "Cao";
+    this.nome = "Mel";
+    this.idade = "5";
+    this.peso = 7;
+
+    //Metodos - ações
+    this.fazerXixi = function() {
+        console.log("Xiiiiiiii");
+    }
+    this.comer = function(kg) {
+        console.log("hummm");
+        this.peso = this.peso + (kg / 2);
+    }
+}
+
+//instanciar um objeto
+var mel = new Animal();
+mel.raca = "Gato";
+var lulu = new Animal();
+lulu.nome = "Lulu";
