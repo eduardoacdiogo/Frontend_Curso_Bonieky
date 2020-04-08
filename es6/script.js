@@ -77,3 +77,19 @@ let novaInfo = {
     estado: 'RN'
 }
 console.log(novaInfo);
+
+// Operador Rest
+
+function add(numero, ...novoNumero) {
+    numero = [
+        ...numero,
+        ...novoNumero
+    ];
+    console.log(numero);
+    return numero;
+}
+let numero = [];
+numero = add(numero, 1, 2, 3);
+console.log(numero);
+numero = add(numero, 5, 6, 7, 8, 9, 10);
+console.log(numero);
