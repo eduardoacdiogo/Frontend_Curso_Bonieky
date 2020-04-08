@@ -53,3 +53,9 @@ const mat = {
 console.log(mat.somar(5, 4));
 let { somar: adicionar } = mat;
 console.log(adicionar(2, 3));
+
+// Objeto literal
+function setInfo(nome2, sobrenome2, idade2) {
+    const newInfo = { nome2: name, sobrenome2: lastName, idade2 };
+    return newInfo;
+}
