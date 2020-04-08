@@ -19,7 +19,7 @@ let texto = "Meu nome eh " + constNome + sobrenome + " e tenho " + idade + " ano
 
 let texto2 = `Meu nome eh ${constNome} ${sobrenome} e tenho ${idade} anos`;
 
-// Destroindo objetos e arrays
+// Desconstruindo objetos e arrays
 
 const info = {
     nome: "Jose",
