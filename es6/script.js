@@ -121,3 +121,34 @@ function cadastro(nome, sobrenome = '', status = false) {
     console.log(`${nome}, ${sobrenome}, ${status}`);
 }
 cadastro("Edu");
+
+// Classes
+class Animal {
+    constructor(tipo, pernas) {
+        this.tipo = tipo;
+        this.pernas = pernas;
+
+    }
+
+    falar(som = 'Som qualquer') {
+        return som;
+    }
+    get dados() {
+        return `Tipo: ${this.tipo}, Pernas ${this.pernas}`;
+    }
+}
+class Gato extends Animal {
+    constructor(pernas, cor) {
+        super('Gato', pernas);
+        this.cor = cor;
+    }
+    falar(som = 'Miau') {
+        return som;
+    }
+}
+
+let gato = new Gato(4, 'preto');
+
+gato.pernas;
+
+console.log(gato.dados);
