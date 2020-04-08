@@ -59,3 +59,21 @@ function setInfo(nome2, sobrenome2, idade2) {
     const newInfo = { nome2: name, sobrenome2: lastName, idade2 };
     return newInfo;
 }
+
+// Operador Spread
+let numeros = [1, 2, 3, 4];
+let outros = [...numeros, 5, 6, 7, 8];
+console.log(outros);
+
+let infor = {
+    nom: 'eduardo',
+    sobre: 'andre',
+    id: 23
+}
+console.log(infor);
+let novaInfo = {
+    ...infor,
+    cidade: 'Natal',
+    estado: 'RN'
+}
+console.log(novaInfo);
