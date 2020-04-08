@@ -114,3 +114,10 @@ valor = concatenar(valor, 1, 2, 3, 4, 5);
 console.log(valor);
 valor = concatenar(valor, 6, 7, 8, 9);
 console.log(valor);
+
+//Variaveis padroes 
+
+function cadastro(nome, sobrenome = '', status = false) {
+    console.log(`${nome}, ${sobrenome}, ${status}`);
+}
+cadastro("Edu");
