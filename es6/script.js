@@ -93,3 +93,24 @@ numero = add(numero, 1, 2, 3);
 console.log(numero);
 numero = add(numero, 5, 6, 7, 8, 9, 10);
 console.log(numero);
+
+// Funções anonimas
+function concatenar(valor, ...num) {
+    let valores = [...valor, ...num];
+    /* Faz a mesma coisa que o total nao comentado
+    let total = valores.reduce(function(atual, x) {
+        console.log(`${atual} + ${x}`);
+        return atual + x;
+    });*/
+    let total = valores.reduce((atual, x) => {
+        console.log(`${atual} + ${x}`);
+        return atual + x;
+    });
+    console.log(total);
+    return valores;
+}
+let valor = [];
+valor = concatenar(valor, 1, 2, 3, 4, 5);
+console.log(valor);
+valor = concatenar(valor, 6, 7, 8, 9);
+console.log(valor);
