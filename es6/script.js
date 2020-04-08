@@ -152,3 +152,19 @@ let gato = new Gato(4, 'preto');
 gato.pernas;
 
 console.log(gato.dados);
+
+//Promise 
+function fazer() {
+    // return new Promise;
+    let promise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('OK');
+        }, 3000);
+
+    });
+    return promise;
+}
+
+fazer().then((resposta) => {
+    console.log(resposta);
+});
