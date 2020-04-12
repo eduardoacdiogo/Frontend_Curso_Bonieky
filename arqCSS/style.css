@@ -86,3 +86,13 @@ Modifiers
     background-color: #00ff00;
     color: #FFFFFF;
 }
+
+.bloco {
+    display: inline-block;
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+}
+
+.bloco--padding-small {
+    padding: 5px;
+}
