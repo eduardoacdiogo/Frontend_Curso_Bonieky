@@ -1,0 +1,28 @@
+.button {
+    border: 1px solid #CCCCCC;
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+.button--green {
+    background-color: #00ff00;
+}
+
+.button--blue {
+    background-color: #0000ff;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.title--underline {
+    text-decoration: underline;
+}
