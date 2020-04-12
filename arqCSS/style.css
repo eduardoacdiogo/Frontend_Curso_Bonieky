@@ -1,3 +1,17 @@
+/*
+BEM = Block Element Modifiers
+
+Block
+-- Sem dependências hierarquica
+-- Usar class apenas. (sem tag ou id)
+
+Element
+-- Nome do block e __
+
+Modifiers
+-- Nome do block--nome-do-modificador
+*/
+
 .button {
     border: 1px solid #CCCCCC;
     background-color: #333333;
@@ -25,4 +39,50 @@
 
 .title--underline {
     text-decoration: underline;
+}
+
+.form {
+    background-color: #eeeeee;
+    padding: 15px;
+    border: 1px solid #CCCCCC;
+    width: 300px;
+}
+
+.form__input {
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    padding: 10px;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form__submit {
+    border: 1px solid #cccccc;
+    background-color: #999999;
+    padding: 10px;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+}
+
+.form--small {
+    padding: 5px;
+}
+
+.form--small .form__input {
+    padding: 5px;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.form--small .form__submit {
+    padding: 5px;
+    font-size: 12px;
+}
+
+.form__submit--green {
+    background-color: #00ff00;
+    color: #FFFFFF;
 }
