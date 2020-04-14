@@ -1,3 +1,13 @@
+$cor-fonte: #333;
+$cor-fundo: #EEEEEE;
+$borda-padrao: 10px;
 body {
-    background-color: #cccccc;
+    background-color: $cor-fundo;
+    color: $cor-fonte;
+}
+
+.quadrado {
+    width: 200px;
+    height: 200px;
+    border: $borda-padrao solid #000;
 }

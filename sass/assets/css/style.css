@@ -1,5 +1,10 @@
 body {
-  background-color: #cccccc;
-}
+  background-color: #EEEEEE;
+  color: #333; }
+
+.quadrado {
+  width: 200px;
+  height: 200px;
+  border: 10px solid #000; }
 
 /*# sourceMappingURL=style.css.map */
