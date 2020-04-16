@@ -1,10 +1,30 @@
 body {
   background-color: #EEEEEE;
-  color: #333; }
+  color: #333;
+}
 
 .quadrado {
   width: 200px;
   height: 200px;
-  border: 10px solid #000; }
+  border: 10px solid #000;
+}
 
-/*# sourceMappingURL=style.css.map */
+nav {
+  background-color: #bbbbbb;
+  height: 100px;
+}
+nav ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav li a {
+  display: block;
+  background-color: green;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}

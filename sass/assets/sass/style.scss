@@ -11,3 +11,23 @@ body {
     height: 200px;
     border: $borda-padrao solid #000;
 }
+
+nav {
+    background-color: #bbbbbb;
+    height: 100px;
+    ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+    li {
+        display: inline-block;
+        a {
+            display: block;
+            background-color: green;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
