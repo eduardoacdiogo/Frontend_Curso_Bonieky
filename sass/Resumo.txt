@@ -1,9 +1,0 @@
-sass assets/sass/base/base.scss assets/css/style.css nao funcionou => --no-source-map --style compressed --watch
-se coloca o --watch para ele ficar monitorando as mudanças feitas no base.scss
-
-=> Para ele monitar as pastas, assim as mudanças sao feitas quando vc salva os arquivos da pasta sass
-sass --watch assets/sass:assets/css
-
-
-
-
