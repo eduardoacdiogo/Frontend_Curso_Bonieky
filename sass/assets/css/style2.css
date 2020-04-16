@@ -1,4 +1,10 @@
 body {
+  font-family: Arial;
+  font-size: 14px;
+  background-color: #999;
+}
+
+body {
   background-color: #EEEEEE;
   color: #333;
 }
