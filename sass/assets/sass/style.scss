@@ -24,11 +24,12 @@ $borda-padrao: 10px;
 
 nav {
     background-color: #bbbbbb;
-    height: 100px;
+    height: 200px;
     ul {
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 80px;
         list-style: none;
+        text-align: center;
     }
     li {
         display: inline-block;
@@ -86,4 +87,25 @@ $item-width: 100px;
 .item_duplo {
     @extend %item;
     width: $item-width * 2;
+}
+
+%item-padrao {
+    margin: 10px;
+    font-size: 14px;
+    color: $cor-fonte;
+    border: 2px solid #333;
+    padding: 5px;
+}
+
+%item-negrito {
+    font-weight: bold;
+}
+
+@for $i from 1 through 10 {
+    .item-#{$i} {
+        @extend %item-padrao;
+        @if $i <=3 {
+            @extend %item-negrito;
+        }
+    }
 }
