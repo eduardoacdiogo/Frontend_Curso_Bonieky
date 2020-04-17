@@ -54,4 +54,15 @@ nav {
   border-color: #0d5c0d;
   color: #0d5c0d; }
 
+.item, .item_duplo {
+  background-color: #000;
+  height: 40px;
+  border: 20px solid #333; }
+
+.item {
+  width: 100px; }
+
+.item_duplo {
+  width: 200px; }
+
 /*# sourceMappingURL=style2.css.map */

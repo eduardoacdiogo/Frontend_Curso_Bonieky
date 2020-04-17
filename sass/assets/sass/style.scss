@@ -70,3 +70,20 @@ nav {
     border-color: rgb(13, 92, 13);
     color: rgb(13, 92, 13);
 }
+
+%item {
+    background-color: #000;
+    height: 40px;
+    border: 20px solid $cor-fonte;
+}
+
+$item-width: 100px;
+.item {
+    @extend %item;
+    width: $item-width;
+}
+
+.item_duplo {
+    @extend %item;
+    width: $item-width * 2;
+}
