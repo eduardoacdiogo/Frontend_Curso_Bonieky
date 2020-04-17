@@ -1,11 +1,20 @@
 @import 'reset';
+@mixin girar($graus) {
+    transform: rotate($graus);
+    -webkit-transform: rotate($graus);
+    -moz-transform: rotate($graus);
+    -ms-transform: rotate($graus);
+}
+
 $cor-fonte: #333;
 $cor-fundo: #EEEEEE;
 $borda-padrao: 10px;
-body {
+
+/*body {
     background-color: $cor-fundo;
     color: $cor-fonte;
 }
+*/
 
 .quadrado {
     width: 200px;
@@ -23,6 +32,7 @@ nav {
     }
     li {
         display: inline-block;
+        @include girar(90deg);
         a {
             display: block;
             background-color: green;

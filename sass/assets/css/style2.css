@@ -1,36 +1,36 @@
 body {
   font-family: Arial;
   font-size: 14px;
-  background-color: #999;
-}
+  background-color: #908070; }
 
-body {
-  background-color: #EEEEEE;
-  color: #333;
+/*body {
+    background-color: $cor-fundo;
+    color: $cor-fonte;
 }
-
+*/
 .quadrado {
   width: 200px;
   height: 200px;
-  border: 10px solid #000;
-}
+  border: 10px solid #000; }
 
 nav {
   background-color: #bbbbbb;
-  height: 100px;
-}
-nav ul {
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-}
-nav li {
-  display: inline-block;
-}
-nav li a {
-  display: block;
-  background-color: green;
-  padding: 10px;
-  text-decoration: none;
-  color: #000;
-}
+  height: 100px; }
+  nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none; }
+  nav li {
+    display: inline-block;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg); }
+    nav li a {
+      display: block;
+      background-color: green;
+      padding: 10px;
+      text-decoration: none;
+      color: #000; }
+
+/*# sourceMappingURL=style2.css.map */
