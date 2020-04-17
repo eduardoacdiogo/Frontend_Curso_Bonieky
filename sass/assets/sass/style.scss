@@ -42,3 +42,31 @@ nav {
         }
     }
 }
+
+%fundamentos-msg {
+    background-color: burlywood;
+    padding: 10px;
+    font-size: 24px;
+    border: 2px solid #CCC;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.msg-info {
+    @extend %fundamentos-msg;
+    border-color: #0000FF;
+    color: #0000FF;
+}
+
+.msg-aviso {
+    @extend %fundamentos-msg;
+    border-color: red;
+    color: red;
+}
+
+.msg-sucesso {
+    @extend %fundamentos-msg;
+    border-color: rgb(13, 92, 13);
+    color: rgb(13, 92, 13);
+}

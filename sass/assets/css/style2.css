@@ -33,4 +33,25 @@ nav {
       text-decoration: none;
       color: #000; }
 
+.msg-info, .msg-aviso, .msg-sucesso {
+  background-color: burlywood;
+  padding: 10px;
+  font-size: 24px;
+  border: 2px solid #CCC;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 10px; }
+
+.msg-info {
+  border-color: #0000FF;
+  color: #0000FF; }
+
+.msg-aviso {
+  border-color: red;
+  color: red; }
+
+.msg-sucesso {
+  border-color: #0d5c0d;
+  color: #0d5c0d; }
+
 /*# sourceMappingURL=style2.css.map */
