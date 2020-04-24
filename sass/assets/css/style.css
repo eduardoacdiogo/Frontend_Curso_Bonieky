@@ -33,6 +33,8 @@ nav {
       padding: 10px;
       text-decoration: none;
       color: #000; }
+      nav li a:hover {
+        background-color: #EEE; }
 
 .msg-info, .msg-aviso, .msg-sucesso {
   background-color: burlywood;
@@ -76,4 +78,4 @@ nav {
 .item-1, .item-2, .item-3 {
   font-weight: bold; }
 
-/*# sourceMappingURL=style2.css.map */
+/*# sourceMappingURL=style.css.map */
