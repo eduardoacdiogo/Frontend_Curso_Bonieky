@@ -11,6 +11,6 @@ import $ from 'jquery';
 
 $(function() {
     $('#botao').on('click', function() {
-        $('h1').html('Olá Mundo Alterado!!');
+        $('h1').html('Ola Mundo Alterado!!');
     });
 });
