@@ -8,3 +8,25 @@ body {
     border: 0px;
     padding: 20px;
 }
+
+.programador,
+.monitor,
+.usuario {
+    background-color: #fff999;
+    width: 520px;
+    height: 520px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.programador {
+    background-image: url(./images/programador.png);
+}
+
+.monitor {
+    background-image: url(./images/monitor.png);
+}
+
+.usuario {
+    background-image: url(./images/usuario.png);
+}
