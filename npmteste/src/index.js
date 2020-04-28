@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import './css/teste.scss';
-import CameraGallery from './images/chave.jpg';
+import CameraGallery from '../src/images/chave.jpg';
 import Botao from './componentes/botao/index.js';
 
 const moment = require('moment');
