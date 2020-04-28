@@ -2,8 +2,8 @@ body {
     background-color: #00FF00;
 }
 
-.botao {
-    background-color: #FF0000;
+.bootao {
+    background-color: #ffff00;
     color: #FFF;
     border: 0px;
     padding: 20px;
@@ -20,13 +20,13 @@ body {
 }
 
 .programador {
-    background-image: url(./images/programador.png);
+    background-image: url(../images/programador.png);
 }
 
 .monitor {
-    background-image: url(./images/monitor.png);
+    background-image: url(../images/monitor.png);
 }
 
 .usuario {
-    background-image: url(./images/usuario.png);
+    background-image: url(../images/usuario.png);
 }
