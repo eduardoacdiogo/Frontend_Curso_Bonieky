@@ -1,5 +1,5 @@
-/*const { series, parallel } = require('gulp');
-
+const { series, parallel } = require('gulp');
+/*
 function clean(cb) {
     cb();
 }
@@ -40,10 +40,20 @@ exports.default = helloTask;
 const { src, dest } = require('gulp');
 const rename = require('gulp-rename');
 const minifyJS = require('gulp-uglify');
+const minifyCSS = require('gulp-uglifycss');
 
-exports.default = function() {
+function javascript() {
     return src('src/js/*.js')
         .pipe(minifyJS())
         .pipe(rename({ extname: '.min.js' }))
         .pipe(dest('dist/'));
+
 }
+
+function css() {
+    return src('src/css/*.css')
+        .pipe(minifyCSS({ maxLineLen: 80, expandVars: true, "uglyComments": true }))
+        .pipe(rename({ extname: '.min.css' }))
+        .pipe(dest('dist/'));
+}
+exports.default = parallel(javascript, css);
