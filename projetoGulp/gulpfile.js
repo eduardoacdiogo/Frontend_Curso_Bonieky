@@ -41,6 +41,7 @@ const { src, dest } = require('gulp');
 const rename = require('gulp-rename');
 const minifyJS = require('gulp-uglify');
 const minifyCSS = require('gulp-uglifycss');
+const image = require('gulp-image');
 
 function javascript() {
     return src('src/js/*.js')
@@ -56,4 +57,11 @@ function css() {
         .pipe(rename({ extname: '.min.css' }))
         .pipe(dest('dist/'));
 }
-exports.default = parallel(javascript, css);
+
+function optimizeImage() {
+    return src('src/images/*.png')
+        .pipe(image())
+        .pipe(dest('dist/'));
+}
+
+exports.default = parallel(javascript, css, optimizeImage);
