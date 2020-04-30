@@ -43,11 +43,15 @@ const minifyJS = require('gulp-uglify');
 const minifyCSS = require('gulp-uglifycss');
 const image = require('gulp-image');
 const sass = require('gulp-sass');
+const babel = require('gulp-babel');
 
 sass.compiler = require('node-sass');
 
 function javascript() {
     return src('src/js/*.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
         .pipe(minifyJS())
         .pipe(rename({ extname: '.min.js' }))
         .pipe(dest('dist/assets/js'));

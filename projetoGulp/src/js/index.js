@@ -1,1 +1,3 @@
-var nome = "Eduardo";
+var nome = (nome) => {
+    return `OI, ${nome}`
+};
