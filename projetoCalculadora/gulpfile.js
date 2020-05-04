@@ -18,7 +18,7 @@ function javascript() {
         }))
         .pipe(minifyjs())
         .pipe(rename({ extname: '.min.js' }))
-        .pipe(dest('public/asstes/js'));
+        .pipe(dest('public/assets/js'));
 }
 
 function css() {
