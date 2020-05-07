@@ -105,3 +105,34 @@ let elemento3 = (
 );
 
 ReactDOM.render(elemento3, document.getElementById('app3'));
+
+class Relogio extends React.Component {
+    
+    constructor (props){
+        super(props);
+        this.state = {
+            hora:'00:00:00'
+        };
+
+        setInterval(() =>{
+            this.setState({hora:new Date().toLocaleTimeString()});
+        },1000);
+    }
+
+    render() {
+        return (
+            <div>
+                <h1>Horário: </h1>
+                <h2>{this.state.hora}</h2>
+            </div>
+        );
+    }
+}
+
+let elemento4 = (
+    <div>
+        <Relogio />
+    </div>
+);
+
+ReactDOM.render(elemento4, document.getElementById('app4'));
