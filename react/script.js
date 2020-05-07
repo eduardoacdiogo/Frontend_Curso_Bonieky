@@ -107,18 +107,31 @@ let elemento3 = (
 ReactDOM.render(elemento3, document.getElementById('app3'));
 
 class Relogio extends React.Component {
-    
+    //primeira parte a ser implementada
     constructor (props){
         super(props);
         this.state = {
             hora:'00:00:00'
         };
-
-        setInterval(() =>{
+    }
+    //segunda parte a ser implementada
+    componentDidMount(){
+        this.timer = setInterval(() =>{
             this.setState({hora:new Date().toLocaleTimeString()});
         },1000);
     }
+    //quando o componente é atualizado ele implementa
+    componentDidUpdate() {
+        console.log("Componente foi atualizado");
+    }
+    //quando o componente for destruido
+    componentWillUnmount() {
+        clearInterval(this.timer);
+    }
+    shouldComponentUpdate() {
 
+    }
+    
     render() {
         return (
             <div>
