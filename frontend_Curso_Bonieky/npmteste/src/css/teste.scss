@@ -1,0 +1,36 @@
+$cor-fundo: #999;
+$cor-letra: #FFF;
+body {
+    background-color: $cor-fundo;
+    color: $cor-letra;
+}
+
+.bootao {
+    background-color: #ffff00;
+    color: #FFF;
+    border: 0px;
+    padding: 20px;
+}
+
+%icone {
+    background-color: #fff999;
+    width: 520px;
+    height: 520px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.programador {
+    @extend %icone;
+    background-image: url(../images/programador.png);
+}
+
+.monitor {
+    @extend %icone;
+    background-image: url(../images/monitor.png);
+}
+
+.usuario {
+    @extend %icone;
+    background-image: url(../images/usuario.png);
+}
